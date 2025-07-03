@@ -103,7 +103,9 @@ lemma ker_StructureMorphism : MonoidHom.ker (StructureMorphism G).1 = ⨅  (U : 
 lemma density_StructureMorphism_image : Dense (Set.range (StructureMorphism G) ) := by
   sorry
 
-lemma kerIsTrivialIfProfiniteGroup -- ⨅  (U : FiniteOpenNormalSubgroup G) is trivial
+lemma kerIsTrivialIfProfiniteGroup  (G : ProfiniteGrp) 
+ ⨅ (U : FiniteOpenNormalSubgroup G) = ⊥ := by
+-- ⨅  (U : FiniteOpenNormalSubgroup G) is trivial
   sorry
 
 lemma Isom_Structuremorphism_when_profinite
